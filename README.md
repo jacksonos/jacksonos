@@ -12,12 +12,12 @@
 
 ###
 
-  <div align="center">
-    ![](https://github-readme-stats.vercel.app/api?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false)<br/>
-    ![](https://nirzak-streak-stats.vercel.app/?user=Jacksonos&theme=highcontrast&hide_border=false)<br/>
-    ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-  </div>
-  
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jacksonos&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=highcontrast&locale=en&hide_border=false&order=1&custom_title=Stats" height="150" alt="stats graph"  />
+  <img src="https://streak-stats.demolab.com?user=jacksonos&locale=en&mode=daily&theme=highcontrast&hide_border=false&border_radius=5&date_format=j%20M%5B%20Y%5D&order=3" height="150" alt="streak graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jacksonos&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=highcontrast&hide_border=false&order=2" height="150" alt="languages graph"  />
+</div>
+
 ###
 
 ## 🏆 GitHub Trophies
@@ -29,4 +29,3 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=Jacksonos&icon=2&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
