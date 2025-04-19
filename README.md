@@ -26,9 +26,6 @@
 ## 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Jacksonos&limit=5&theme=highcontrast&combine_all_yearly_contributions=true)
 
----
-[![](https://visitcount.itsvg.in/api?id=Jacksonos&icon=2&color=0)](https://visitcount.itsvg.in)
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jacksonos/jacksonos/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jacksonos/jacksonos/output/github-snake.svg" />
