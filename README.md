@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+🔭 I’m currently working on Unibanca<br>👯 I’m looking to collaborate on web apps projects<br>🤝 I’m looking for help with MERN<br>🌱 I’m currently learning Express<br>💬 Ask me about programming and PC components<br>⚡ Fun fact
 
 
 ## 🌐 Socials:
