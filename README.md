@@ -35,4 +35,3 @@
 
 <img src="https://raw.githubusercontent.com/jacksonos/jacksonos/output/snake.svg" alt="Snake animation" />
 
-###
