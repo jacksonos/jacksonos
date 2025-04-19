@@ -12,10 +12,10 @@
 
 ###
 <div align="center">
+  ![](https://github-readme-stats.vercel.app/api?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false)<br/>
+  ![](https://nirzak-streak-stats.vercel.app/?user=Jacksonos&theme=highcontrast&hide_border=false)<br/>
+  ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 </div>
-![](https://github-readme-stats.vercel.app/api?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Jacksonos&theme=highcontrast&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Jacksonos&theme=highcontrast&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 ###
 
 ## 🏆 GitHub Trophies
