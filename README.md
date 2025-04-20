@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on Unibanca<br>👯 I’m looking to collaborate on web apps projects<br>🤝 I’m looking for help with MERN<br>🌱 I’m currently learning Express<br>💬 Ask me about programming and PC components<br>⚡ Fun fact: Tryhard gamer
+🔭 I’m currently working on Unibanca<br>👯 I’m looking to collaborate on web apps projects<br>🤝 I’m looking for help with microservices<br>🌱 I’m currently learning MERN<br>💬 Ask me about programming and PC components<br>⚡ Fun fact: Tryhard gamer
 
 
 ## 🌐 Socials:
