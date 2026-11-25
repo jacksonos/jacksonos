@@ -2,19 +2,23 @@
 Usage: python scripts/make_portrait.py PHOTO   (writes assets/portrait.txt only)"""
 import sys
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image, ImageChops, ImageFilter, ImageOps
 
-COLS, ROWS = 72, 48
+COLS, ROWS = 84, 42
 RAMP = "  .:-=+*#%@"  # light -> dark
-LO, HI = 0.15, 0.9  # darkness below LO = blank (background), above HI = solid (shirt, hair)
-GAMMA = 1.4  # >1 lightens midtones (keeps skin sparse)
-CROP = (0.1, 0.0, 0.9, 1.0)  # fractions l,t,r,b; 3:4 box, since 72x48 cells with 2:1 glyphs is 3:4
+LO, HI = 0.09, 0.95  # darkness below LO = blank (background), above HI = solid (hair)
+GAMMA = 0.75  # <1 darkens midtones (keeps skin visible)
+MARGIN = 0.03  # padding around the non-white bbox, as a fraction of its size
 
 def main(photo):
-    im = ImageOps.exif_transpose(Image.open(photo)).convert("L")
-    w, h = im.size
-    im = im.crop((int(CROP[0] * w), int(CROP[1] * h), int(CROP[2] * w), int(CROP[3] * h)))
-    im = ImageOps.autocontrast(im, cutoff=2).resize((COLS, ROWS), Image.LANCZOS)
+    im = ImageOps.exif_transpose(Image.open(photo)).convert("RGB")
+    bbox = ImageChops.difference(im, Image.new("RGB", im.size, "white")).point(lambda v: 255 if v > 12 else 0).convert("L").getbbox()
+    l, t, r, b = bbox
+    m = int(MARGIN * max(r - l, b - t))
+    side = max(r - l, b - t) + 2 * m  # square crop centred on the bbox
+    cx, cy = (l + r) // 2, (t + b) // 2
+    im = im.convert("L").crop((cx - side // 2, cy - side // 2, cx + side // 2, cy + side // 2))
+    im = im.resize((COLS, ROWS), Image.LANCZOS).filter(ImageFilter.UnsharpMask(1, 120, 2))
     rows = []
     for y in range(ROWS):
         line = ""
