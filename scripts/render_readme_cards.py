@@ -102,16 +102,16 @@ def stats(path):
 
 
 def card_hero(portrait):
-    cols = max(len(l) for l in portrait)  # fit the real grid into the left half (x 36..406), centred vertically
-    fs = min(9, 370 / (cols * MONO_ADV))
-    lh, x0 = fs * 1.125, 36
+    cols = max(len(l) for l in portrait)  # fit the real grid into the left half (x 20..416), centred vertically
+    fs = min(9, 396 / (cols * MONO_ADV))
+    lh, x0 = fs * 2 * MONO_ADV, 20  # cells are 1:2, as make_portrait.py assumes
     y0 = (480 - len(portrait) * lh) / 2 + fs
     rows = ""
     for i, line in enumerate(portrait):
         lead = len(line) - len(line.lstrip())
         if line.strip():
             rows += (f'<text class="mono fade" x="{x0 + lead * fs * MONO_ADV:.1f}" y="{y0 + i * lh:.1f}" '
-                     f'font-size="{fs:.2f}"{dl(0.2 + i * 0.018)}>{escape(line.strip())}</text>')
+                     f'font-size="{fs:.2f}" xml:space="preserve"{dl(0.2 + i * 0.018)}>{escape(line.strip())}</text>')
     phrase = textwrap.wrap("I build software you can trust: readable, tested, and honest about what it does.", 33)
     ptxt = "".join(f'<tspan x="430" dy="{0 if i == 0 else 25}">{escape(t)}</tspan>' for i, t in enumerate(phrase))
     sheen = defs = ""
